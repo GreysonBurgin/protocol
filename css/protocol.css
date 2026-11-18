@@ -175,3 +175,10 @@ body.intro #scrawl, body.locked #scrawl, body.read #scrawl, body.turning #scrawl
 @media (max-height: 780px) and (min-width: 901px) { #scrawl { --bar:calc(22px + 3vh + 92px + 52px + 96px); } }
 @media (max-width: 900px), (max-height: 600px) { #scrawl { display:none; } }     /* no room for it on a phone; the bar stands alone there */
 @media (prefers-reduced-motion: reduce) { #scrawl { transition:none !important; } }
+
+/* the question bar sits in a quiet box from the start, on solid ground, so it reads as the thing to use */
+.box { width:min(100%, 660px); padding:16px 22px 14px; background:var(--card); border-color:rgba(20,19,18,.2); box-shadow:0 1px 0 rgba(20,19,18,.05), 0 10px 30px -18px rgba(20,19,18,.35); }
+.box.open { width:100%; padding:18px 22px 0; border-color:var(--ink); box-shadow:none; }
+#scrawl { --bar:calc(22px + 4vh + 104px + clamp(64px, 11vh, 110px) + 128px); }
+@media (max-height: 780px) and (min-width: 901px) { #scrawl { --bar:calc(22px + 3vh + 92px + 52px + 128px); } }
+@media (max-width: 900px) { .box, .box.open { width:100%; } }
