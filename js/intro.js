@@ -162,7 +162,7 @@ async function play(text, done){
   setup(); running = true; t0 = performance.now(); raf = requestAnimationFrame(frame);
   window.__seek = t => { cancelAnimationFrame(raf); render(t); };
 }
-addEventListener('keydown', () => { if (running) finish(); });                         // any key or any click skips
+addEventListener('keydown', e => { if (running){ e.preventDefault(); finish(); } });                         // any key or any click skips
 addEventListener('pointerdown', () => { if (running) finish(); });
 window.ProtocolIntro = { play, skip: finish, length: T.end };
 })();

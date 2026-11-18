@@ -139,3 +139,17 @@ table.weeks tr.next td { background:var(--mark); }
 
 .colophon { margin:60px 0 0; padding-top:14px; border-top:1.5px solid var(--ink); font-size:13.5px; color:var(--mute); } .colophon p { margin:0 0 5px; max-width:64ch; }
 #doc .inner { position:relative; }
+
+/* the front door: after the opening, before the page */
+#gate { position:fixed; inset:128px 0 0 0; display:flex; align-items:center; justify-content:center; padding:0 20px 14vh; z-index:4; transition:opacity .6s ease; }
+#gate[hidden] { display:none; }
+body.intro #gate { opacity:0; pointer-events:none; }
+#gate-f { width:min(100%, 460px); }
+.gate-row { display:flex; align-items:baseline; border-bottom:3px solid var(--ink); }
+.gate-row:focus-within { border-bottom-color:var(--accent); box-shadow:0 3px 0 var(--accent); }
+#gate-pw { flex:1; min-width:0; border:0; background:transparent; font-size:clamp(22px, 2.8vw, 32px); padding:6px 0 12px; outline:none; letter-spacing:.12em; }
+.gate-row button { border:0; background:transparent; padding:0 2px 0 18px; font-size:15px; letter-spacing:.14em; text-transform:uppercase; cursor:pointer; }
+.gate-row button:hover { color:var(--accent); }
+#gate-msg { margin:14px 0 0; font-size:14.5px; color:var(--mute); min-height:1.5em; }
+#gate-msg.bad { color:var(--accent); font-weight:600; }
+body.locked #stage, body.locked #top nav { display:none; }

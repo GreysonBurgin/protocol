@@ -22,6 +22,17 @@
   </nav>
 </header>
 
+<section id="gate" aria-labelledby="gate-h" hidden>
+  <form id="gate-f" autocomplete="off">
+    <h2 id="gate-h" class="label"><label for="gate-pw">Password</label></h2>
+    <div class="gate-row">
+      <input id="gate-pw" type="password" autocomplete="off" aria-describedby="gate-msg">
+      <button type="submit">Enter</button>
+    </div>
+    <p id="gate-msg" role="status">Your LA gives it out at the first recitation.</p>
+  </form>
+</section>
+
 <div id="stage">
  <div id="card">
   <div id="outline" aria-hidden="true"><i class="t"></i><i class="r"></i><i class="b"></i><i class="l"></i></div>
@@ -37,7 +48,6 @@
               <button type="submit">Ask</button>
             </form>
             <ul id="starters" class="starters" aria-label="Questions to start with"></ul>
-            <div id="lock" class="lock" hidden></div>
           </div>
           <div id="answer" aria-live="polite" tabindex="-1"></div>
         </div>

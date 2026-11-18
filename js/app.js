@@ -83,19 +83,32 @@ const aiOn = () => !!CFG.WORKER_URL && !!pass;
 async function aiAnswer(q){
   const r = await fetch(CFG.WORKER_URL.replace(/\/$/,'') + '/ask', { method:'POST', headers:{'content-type':'application/json'}, body:JSON.stringify({ question:q, password:pass }) });
   const j = await r.json().catch(() => ({}));
-  if (r.status === 401){ pass = ''; try { sessionStorage.removeItem('protocol-pass'); } catch (e) {} drawLock('That password did not work.'); throw new Error('locked'); }
+  if (r.status === 401){ pass = ''; try { sessionStorage.removeItem('protocol-pass'); } catch (e) {} lock('That password no longer works. Enter it again.'); throw new Error('locked'); }
   if (!r.ok) throw new Error(j.error || 'unavailable');
   const ps = (j.passages || []).map(id => byId[id]).filter(Boolean).slice(0, 2);    // only ids that exist in the file are shown
   return { covered: !!j.covered && ps.length > 0, passages: ps, interpretation: typeof j.explanation === 'string' ? j.explanation.slice(0, 500) : '', ai:true };
 }
-function drawLock(msg){
-  const el = $('lock'); if (!CFG.WORKER_URL){ el.hidden = true; return; }
-  el.hidden = false;
-  if (pass){ el.innerHTML = 'The AI is unlocked for this visit. It finds the section and gives its own interpretation. The section is always shown word for word, so check one against the other.'; return; }
-  el.innerHTML = (msg ? '<b>' + esc(msg) + '</b> ' : '') + 'Answers come from search right now. Your LA gives the AI password at the first recitation.' +
-    '<form id="unlock"><label class="sr" for="pw">Password</label><input id="pw" type="password" placeholder="Password" autocomplete="off"><button type="submit">Unlock</button></form>';
-  $('unlock').onsubmit = e => { e.preventDefault(); pass = $('pw').value.trim(); try { sessionStorage.setItem('protocol-pass', pass); } catch (er) {} drawLock(); };
+// ---------- the front door ----------
+// With a Worker set, the page waits behind a password. The Worker checks it; the page never knows the right answer.
+// If the Worker cannot be reached or has passed its end date, the door opens anyway and the page answers by search:
+// the syllabus must outlive the key.
+function lock(msg){
+  document.body.classList.add('locked'); $('gate').hidden = false;
+  const m = $('gate-msg'); if (msg){ m.textContent = msg; m.classList.add('bad'); }
+  if (!document.body.classList.contains('intro')) setTimeout(() => $('gate-pw').focus(), 50);
 }
+function unlock(){ document.body.classList.remove('locked'); $('gate').hidden = true; setTimeout(() => $('q').focus({ preventScroll:true }), 50); }
+$('gate-f').onsubmit = async e => {
+  e.preventDefault(); const tried = $('gate-pw').value.trim(), m = $('gate-msg'); if (!tried) return;
+  m.classList.remove('bad'); m.textContent = 'Checking\u2026';
+  let status = 0;
+  try { status = (await fetch(CFG.WORKER_URL.replace(/\/$/,'') + '/unlock', { method:'POST', headers:{'content-type':'application/json'}, body:JSON.stringify({ password:tried }) })).status; } catch (er) { status = 0; }
+  if (status === 200){ pass = tried; try { sessionStorage.setItem('protocol-pass', pass); } catch (er) {} $('gate-pw').value = ''; unlock(); }
+  else if (status === 401){ m.textContent = 'That is not it. Ask your LA.'; m.classList.add('bad'); $('gate-pw').select(); }
+  else if (status === 429){ m.textContent = 'Too many tries. Wait a minute.'; m.classList.add('bad'); }
+  else { pass = ''; unlock(); }                                  // Worker unreachable or expired: open, answer by search
+};
+if (CFG.WORKER_URL && !pass) lock();
 
 // ---------- drawing an answer ----------
 const quoteHTML = q => '<blockquote>“' + esc(q.text) + '”</blockquote><figcaption><b>Rick Griffith</b>, ' + esc(q.context) + '. <a href="' + esc(q.url) + '" target="_blank" rel="noopener">' + esc(q.source) + (q.year ? ', ' + q.year : '') + '</a></figcaption>';
@@ -144,7 +157,6 @@ $('starters').innerHTML = S.starters.map(s => '<li><button type="button">' + esc
 $('starters').querySelectorAll('button').forEach(b => { b.onmousedown = e => e.preventDefault(); b.onclick = () => { ask(b.textContent); sync(); }; });
 $('q').addEventListener('input', sync); $('clear').onclick = reset; sync();
 $('standing').innerHTML = quoteHTML(Q[qi]);
-drawLock();
 
 // ---------- the reading page ----------
 (function(){
@@ -217,7 +229,7 @@ $('ask').querySelector('.inner').inert = false; $('doc').querySelector('.inner')
 // ---------- the opening ----------
 const everything = S.passages.map(p => p.text.join(' ')).join(' ').replace(/\s+/g, ' ') + ' ';
 function opening(){ try { localStorage.setItem('protocol-seen', '1'); } catch (e) {}                 // marked as seen the moment it starts
-  if (window.ProtocolIntro) ProtocolIntro.play(everything, () => { $('q').focus({ preventScroll:true }); }); }
+  if (window.ProtocolIntro) ProtocolIntro.play(everything, () => { (document.body.classList.contains('locked') ? $('gate-pw') : $('q')).focus({ preventScroll:true }); }); }
 $('replay').onclick = opening;
 let seen = false; try { seen = !!localStorage.getItem('protocol-seen'); } catch (e) {}
 const introMode = CFG.INTRO || 'first-visit';
