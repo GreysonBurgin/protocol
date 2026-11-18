@@ -153,3 +153,25 @@ body.intro #gate { opacity:0; pointer-events:none; }
 #gate-msg { margin:14px 0 0; font-size:14.5px; color:var(--mute); min-height:1.5em; }
 #gate-msg.bad { color:var(--accent); font-weight:600; }
 body.locked #stage, body.locked #top nav { display:none; }
+
+/* the hand on the Ask page. It sits behind the sheet, dims when an answer is open, and leaves when the sheet turns. */
+#scrawl { position:fixed; inset:0; z-index:1; pointer-events:none; overflow:hidden; transition:opacity .5s ease;
+  --bar:calc(22px + 4vh + 104px + clamp(64px, 11vh, 110px) + 96px);      /* from the bottom of the window up to the top of the question bar */
+  --room:calc(100vh - var(--bar) - 138px); }                             /* the clear space between the heading and the bar; every size is a share of it */
+#stage { z-index:2; } #ask { background:transparent; }
+#scrawl p { position:absolute; margin:0; font-weight:700; letter-spacing:-.045em; line-height:.9; color:var(--ink); white-space:nowrap; }
+#scrawl .g { filter:url(#ghost); }
+#scrawl .g1 { left:-4vw; top:60px; font-size:23vw; opacity:.07; transform:rotate(-6deg); }
+#scrawl .g2 { right:-8vw; bottom:-40px; font-size:26vw; opacity:.06; transform:rotate(4deg); }
+#scrawl .g3 { right:-3vw; top:120px; font-size:14.5vw; opacity:.05; transform:rotate(9deg); }
+#scrawl .s1 { filter:url(#ink1); left:7vw; top:calc(138px + var(--room) * .03); font-size:min(calc(var(--room) * .277), 7.8vw); transform:rotate(-5deg); }
+#scrawl .s2 { filter:url(#ink2); right:7.5vw; top:calc(138px + var(--room) * .165); font-size:min(calc(var(--room) * .173), 4.9vw); transform:rotate(3.5deg); }
+#scrawl .s3 { filter:url(#ink3); left:calc(50% - var(--room) * .815); top:calc(138px + var(--room) * .444); font-size:calc(var(--room) * .316); transform:rotate(-3deg); color:var(--accent); }
+#scrawl .arrow { position:absolute; filter:url(#ink3); left:calc(50% + var(--room) * .42); top:calc(138px + var(--room) * .578); width:calc(var(--room) * .37); height:calc(var(--room) * .32); color:var(--accent); transform:rotate(8deg); }
+#scrawl .s4 { filter:url(#ink3); left:-20px; bottom:26px; font-size:22px; opacity:.32; transform:rotate(-1deg); }
+#scrawl .s5 { filter:url(#ink1); right:9vw; bottom:150px; font-size:40px; opacity:.5; transform:rotate(-8deg); }
+body:has(:where(.box.open)) #scrawl { opacity:.22; }                             /* an answer is open: the page steps back so the box can be read */
+body.intro #scrawl, body.locked #scrawl, body.read #scrawl, body.turning #scrawl, body.outlined #scrawl { opacity:0; }
+@media (max-height: 780px) and (min-width: 901px) { #scrawl { --bar:calc(22px + 3vh + 92px + 52px + 96px); } }
+@media (max-width: 900px), (max-height: 600px) { #scrawl { display:none; } }     /* no room for it on a phone; the bar stands alone there */
+@media (prefers-reduced-motion: reduce) { #scrawl { transition:none !important; } }
