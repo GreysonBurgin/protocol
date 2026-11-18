@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Protocol: ask the syllabus first</title>
+<meta name="description" content="The syllabus for ATLS 2300 TEXT, Spring 2027. Ask it a question and it answers in its own words.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/protocol.css">
+</head>
+<body class="intro">
+<a class="skiplink" href="#q">Skip to the question box</a>
+<canvas id="intro" aria-hidden="true"></canvas>
+<button id="skip" type="button" hidden>Skip (any key)</button>
+
+<header id="top">
+  <button id="replay" type="button">Replay the opening</button>
+  <h1><span id="l1"><b>Protocol:</b> ask the syllabus first.</span><span id="l2">Save Rick the good ones.</span></h1>
+  <nav aria-label="Two pages">
+    <button id="tab-ask" type="button" aria-pressed="true">Ask</button>
+    <button id="tab-read" type="button" aria-pressed="false">Read</button>
+  </nav>
+</header>
+
+<div id="stage">
+ <div id="card">
+  <div id="outline" aria-hidden="true"><i class="t"></i><i class="r"></i><i class="b"></i><i class="l"></i></div>
+  <section id="ask" class="face" aria-labelledby="ask-h">
+    <div class="inner">
+      <div class="zone">
+        <div id="box" class="box">
+          <div class="askbar">
+            <h2 id="ask-h" class="label"><label for="q">Ask a question</label></h2>
+            <form id="f" autocomplete="off">
+              <input id="q" name="q" maxlength="300" placeholder="How many classes can I miss?" aria-controls="starters">
+              <button type="button" id="clear" hidden aria-label="Clear the question">&times;</button>
+              <button type="submit">Ask</button>
+            </form>
+            <ul id="starters" class="starters" aria-label="Questions to start with"></ul>
+            <div id="lock" class="lock" hidden></div>
+          </div>
+          <div id="answer" aria-live="polite" tabindex="-1"></div>
+        </div>
+      </div>
+      <figure id="standing" class="rick"></figure>
+    </div>
+  </section>
+
+  <section id="doc" class="face" aria-labelledby="doc-h">
+    <div class="inner">
+      <div class="doctools">
+        <label><input type="checkbox" id="plain"> Show what each part means</label>
+      </div>
+      <div id="doc-body"></div>
+      <div class="colophon">
+        <p>Protocol is a remake of the ATLS 2300 TEXT syllabus by Greyson Burgin, made for Major Assignment Three. The syllabus text is Rick Griffith’s, kept word for word.</p>
+        <p>The opening is drawn from portraits of Rick Griffith by Norman Posselt.</p>
+      </div>
+    </div>
+  </section>
+ </div>
+</div>
+
+<noscript><p style="padding:2rem;max-width:40rem">This page needs JavaScript to show the syllabus. The full text is in <a href="data/syllabus.json">data/syllabus.json</a>.</p></noscript>
+<script src="js/config.js"></script>
+<script src="js/intro.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

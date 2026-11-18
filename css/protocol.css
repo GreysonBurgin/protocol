@@ -1,0 +1,141 @@
+/* Protocol. Paper, ink, one accent. Every text/background pair below is at least 4.5:1. */
+:root { --paper:#f3f0e8; --card:#fbfaf6; --ink:#141312; --mute:#5c574f; --accent:#c2300f; --rule:#e23d1c; --mark:#fde9b6; }
+* { box-sizing:border-box; }
+html, body { margin:0; height:100%; }
+body { background:var(--paper); color:var(--ink); font-family:"Helvetica Neue", Helvetica, Arial, sans-serif; font-size:17px; line-height:1.5; overflow:hidden; }
+button, input { font:inherit; color:inherit; }
+a { color:var(--accent); } a:hover { color:var(--ink); }
+:focus-visible { outline:3px solid var(--ink); outline-offset:3px; }
+.skiplink { position:absolute; left:-9999px; top:8px; z-index:20; background:var(--ink); color:var(--card); padding:8px 12px; }
+.skiplink:focus { left:8px; }
+
+#intro { display:none; position:fixed; inset:0; width:100vw; height:100vh; z-index:10; pointer-events:none; transition:opacity .5s ease; }
+#intro.gone { opacity:0; }
+#skip { position:fixed; right:22px; bottom:20px; z-index:11; background:var(--ink); color:var(--card); border:0; padding:12px 18px; font-size:15px; letter-spacing:.14em; text-transform:uppercase; cursor:pointer; }
+body.intro #top, body.intro #stage { opacity:0; pointer-events:none; }
+#top, #stage { transition:opacity .6s ease; }
+
+/* header */
+#top { position:fixed; top:0; left:0; right:0; height:128px; z-index:5; text-align:center; padding-top:22px; pointer-events:none; }
+#top h1 { margin:0; font-size:clamp(15px, 2.1vw, 24px); font-weight:600; line-height:1.3; }
+#top h1 span { display:block; } #top h1 b { color:var(--accent); font-weight:600; }
+#top nav { display:inline-flex; gap:0; margin-top:12px; pointer-events:auto; border:2px solid var(--ink); background:var(--paper); }
+#top nav button { border:0; background:transparent; padding:7px 26px; font-size:13px; letter-spacing:.16em; text-transform:uppercase; cursor:pointer; }
+#top nav button[aria-pressed="true"] { background:var(--ink); color:var(--card); }
+
+#replay { position:absolute; left:22px; top:22px; pointer-events:auto; border:2px solid var(--ink); background:var(--paper); padding:10px 18px; font-size:15px; letter-spacing:.14em; text-transform:uppercase; cursor:pointer; }
+#replay:hover, #replay:focus-visible { background:var(--ink); color:var(--card); }
+@media (max-width: 1100px) { #replay { display:none; } }
+
+/* the two pages are the two sides of one sheet. Ask is the front and is the page itself, with no edge.
+   To read: an outline draws itself out of the background, then that piece of the page turns over.
+   To ask: it turns back, settles, and the outline melts into the page again. */
+#stage { position:fixed; inset:128px 0 0 0; perspective:2400px; perspective-origin:50% 40%; overflow:hidden; }
+#card { position:absolute; top:0; bottom:22px; left:50%; width:min(880px, calc(100vw - 16px)); margin-left:calc(min(880px, 100vw - 16px) / -2); }
+.face { position:absolute; inset:0; margin:0; }
+.face .inner { height:100%; overflow-y:auto; padding:8px clamp(18px, 4vw, 44px) 80px; }
+#ask { background:var(--paper); }
+#doc { background:var(--card); display:none; }
+#doc .inner { padding-top:0; }
+/* At rest the sheet is flat and only one side exists, so nothing hidden can catch the mouse wheel.
+   The 3D is switched on only while the sheet is turning. */
+body.read #ask { display:none; } body.read #doc { display:block; }
+body.turning #card { transform-style:preserve-3d; transition:transform .85s cubic-bezier(.65,0,.25,1); }
+body.turning #ask, body.turning #doc { display:block; -webkit-backface-visibility:hidden; backface-visibility:hidden; }
+body.turning #doc { transform:rotateY(180deg); }
+body.turning.flipped #card { transform:rotateY(180deg); }
+body.snap #card { transition:none !important; }
+#outline { position:absolute; inset:0; pointer-events:none; z-index:3; transition:opacity .5s ease; }
+#outline i { position:absolute; background:var(--ink); transition:transform .13s linear; }      /* four edges, drawn one after another */
+#outline .t { top:0; left:0; right:0; height:2px; transform:scaleX(0); transform-origin:left; }
+#outline .r { top:0; right:0; bottom:0; width:2px; transform:scaleY(0); transform-origin:top; }
+#outline .b { bottom:0; left:0; right:0; height:2px; transform:scaleX(0); transform-origin:right; }
+#outline .l { top:0; left:0; bottom:0; width:2px; transform:scaleY(0); transform-origin:bottom; }
+body.outlined #outline .t { transform:scaleX(1); }
+body.outlined #outline .r { transform:scaleY(1); transition-delay:.125s; }
+body.outlined #outline .b { transform:scaleX(1); transition-delay:.25s; }
+body.outlined #outline .l { transform:scaleY(1); transition-delay:.375s; }
+body.melting #outline { opacity:0; }
+body.resetting #outline, body.resetting #outline i { transition:none; }
+
+/* asking: one bar and one quote. Asking makes the bar grow into a box that holds the answer and scrolls. */
+#ask .inner { overflow:hidden; padding:0 clamp(18px, 4vw, 44px); display:flex; flex-direction:column; max-width:880px; margin:0 auto; }
+.zone { flex:1 1 0; min-height:0; display:flex; flex-direction:column; justify-content:flex-end; align-items:center; padding-top:6px; }
+.box { display:flex; flex-direction:column; min-height:0; max-height:100%; width:min(100%, 612px); border:2px solid transparent; padding:0;
+  transition:width .5s cubic-bezier(.7,0,.2,1), padding .45s cubic-bezier(.7,0,.2,1), border-color .3s ease, background-color .3s ease; }
+.box.open { width:100%; }                 /* asking widens the bar into the full sheet */
+.box.open { border-color:var(--ink); background:var(--card); padding:18px 22px 0; }
+.label { margin:0 0 10px; font-size:13px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; }
+#f { display:flex; align-items:baseline; border-bottom:3px solid var(--ink); }
+#q { flex:1; min-width:0; border:0; background:transparent; font-size:clamp(22px, 2.8vw, 32px); padding:6px 0 12px; outline:none; }
+#q::placeholder { color:#6b665d; }
+#f:focus-within { border-bottom-color:var(--accent); box-shadow:0 3px 0 var(--accent); }
+#f button { border:0; background:transparent; padding:0 2px 0 18px; font-size:15px; letter-spacing:.14em; text-transform:uppercase; cursor:pointer; }
+#f button:hover { color:var(--accent); }
+#clear { font-size:24px !important; letter-spacing:0 !important; line-height:1; color:var(--mute); }
+.starters { list-style:none; margin:0; padding:0; max-height:0; overflow:hidden; opacity:0; transition:max-height .35s ease, opacity .25s ease; }
+.askbar:focus-within .starters.ready { max-height:300px; opacity:1; }
+.starters li { border-bottom:1px solid rgba(20,19,18,.18); }
+.starters button { display:block; width:100%; text-align:left; border:0; background:transparent; padding:9px 0; font-size:16px; cursor:pointer; color:var(--mute); }
+.starters button:hover, .starters button:focus-visible { color:var(--ink); padding-left:8px; }
+.lock { margin-top:12px; font-size:14px; color:var(--mute); }
+.lock form { display:inline-flex; gap:6px; margin-left:6px; }
+.lock input { border:1.5px solid var(--ink); background:var(--card); padding:4px 8px; width:11em; font-size:14px; }
+.lock button, .link { border:0; background:transparent; text-decoration:underline; cursor:pointer; padding:0; color:var(--accent); font-size:inherit; }
+
+#answer { flex:1 1 auto; min-height:0; max-height:0; overflow-y:auto; overscroll-behavior:contain; outline:none;
+  transition:max-height .55s cubic-bezier(.7,0,.2,1); scrollbar-width:thin; scrollbar-color:var(--ink) transparent; margin-right:-14px; padding-right:14px; }
+.box.open #answer { max-height:70vh; }
+#answer::-webkit-scrollbar { width:8px; } #answer::-webkit-scrollbar-thumb { background:var(--ink); } #answer::-webkit-scrollbar-track { background:rgba(20,19,18,.1); }
+.answer { padding:22px 0 20px; }
+.tag { margin:0 0 8px; font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--mute); }
+.says { border-left:4px solid var(--ink); padding:2px 0 2px 16px; }
+.says + .says { margin-top:18px; }
+.says .where { margin:0 0 8px; font-size:13px; color:var(--mute); }
+.says blockquote { margin:0; font-size:17px; } .says blockquote p { margin:0 0 6px; }
+.says .goto { margin:6px 0 0; font-size:14px; }
+.means { margin:24px 0 0; } .means p { margin:0 0 8px; }
+.means .by { font-size:13px; color:var(--mute); }
+.ladder { list-style:none; margin:22px 0 0; padding:12px 0 0; border-top:1.5px solid var(--ink); display:flex; flex-wrap:wrap; gap:6px 18px; font-size:14.5px; counter-reset:l; }
+.ladder li { counter-increment:l; color:var(--mute); } .ladder li::before { content:counter(l) ". "; }
+.ladder li.now { color:var(--ink); font-weight:600; }
+
+.rick { margin:0; border-left:4px solid var(--rule); padding:2px 0 2px 16px; }
+.rick blockquote { margin:0; font-size:clamp(18px, 2vw, 22px); line-height:1.3; }
+.rick figcaption { margin-top:10px; font-size:13.5px; color:var(--mute); } .rick figcaption b { color:var(--ink); }
+#standing { flex:0 0 auto; width:min(100%, 612px); margin:clamp(64px, 11vh, 110px) auto 0; height:104px; }     /* the quote stands apart from the bar */
+#ask .inner { padding-bottom:4vh; }
+
+/* reading */
+.doctools { position:sticky; top:0; background:var(--card); padding:12px 0 10px; font-size:14px; border-bottom:1.5px solid var(--ink); z-index:1; }
+#doc-body { padding-top:26px; }
+.dochead .num { font-size:clamp(48px, 8vw, 84px); font-weight:200; letter-spacing:.04em; margin:0; line-height:1; }
+.dochead h2 { font-size:clamp(34px, 5vw, 52px); letter-spacing:.06em; margin:6px 0 4px; }
+.dochead .term { margin:0 0 20px; font-size:14px; letter-spacing:.16em; text-transform:uppercase; color:var(--mute); }
+.sec { border-top:3px solid var(--ink); margin-top:38px; padding-top:14px; }
+.sec > h3 { margin:0 0 6px; font-size:clamp(22px, 3vw, 30px); letter-spacing:.05em; text-transform:uppercase; }
+.pas { padding:14px 14px 6px; margin:0 -14px; scroll-margin-top:70px; }
+.pas h4 { margin:0 0 8px; font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--mute); font-weight:500; }
+.pas p { margin:0 0 7px; max-width:64ch; }
+.pas .m { display:none; margin-top:10px; border-left:4px solid var(--rule); padding-left:12px; color:var(--ink); font-size:15.5px; }
+.plain .pas .m { display:block; }
+.pas.hit { background:var(--mark); outline:2px solid var(--ink); }
+table.weeks { border-collapse:collapse; width:100%; margin:14px 0 6px; font-size:15.5px; }
+table.weeks th, table.weeks td { text-align:left; vertical-align:top; padding:8px 10px 8px 0; border-bottom:1px solid var(--ink); }
+table.weeks th { font-size:12px; letter-spacing:.16em; text-transform:uppercase; font-weight:500; color:var(--mute); }
+table.weeks td.d { white-space:nowrap; font-weight:600; } table.weeks .due { color:var(--accent); font-weight:600; white-space:nowrap; }
+table.weeks tr.next td { background:var(--mark); }
+.cal { font-size:14px; color:var(--mute); } .cal li { margin-bottom:3px; }
+
+@media (max-width: 900px) {
+  #ask .inner { overflow-y:auto; display:block; padding-bottom:40px; } .zone { display:block; padding-top:24px; } .box, .box.open, #standing { width:100%; } .box.open #answer { max-height:none; }
+  #top { height:120px; } #stage { inset:120px 0 0 0; } #card { bottom:8px; }
+}
+@media (prefers-reduced-motion: reduce) { #card, body.turning #card, #outline, #outline i, #top, #stage, #intro, .box, #answer { transition:none !important; } }
+#standing { border-left:0; padding:0; }
+#standing blockquote, #standing figcaption { border-left:4px solid var(--rule); padding-left:16px; }
+#standing blockquote { padding-top:2px; } #standing figcaption { margin-top:0; padding-top:10px; padding-bottom:2px; }
+@media (max-height: 780px) and (min-width: 901px) { #standing { margin-top:52px; height:92px; } #ask .inner { padding-bottom:3vh; } }   /* short laptop screens: keep room for the answer */
+
+.colophon { margin:60px 0 0; padding-top:14px; border-top:1.5px solid var(--ink); font-size:13.5px; color:var(--mute); } .colophon p { margin:0 0 5px; max-width:64ch; }
+#doc .inner { position:relative; }

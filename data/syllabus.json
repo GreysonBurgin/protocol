@@ -1,0 +1,1389 @@
+{
+  "_note": "This one file is the whole syllabus. Edit the words here and the reading page, the search and the AI all change with it. Text in 'text' is Rick Griffith's wording, kept exactly, including its spelling. 'means' is the plain-language explanation. {{TOKENS}} are dates filled in from 'dates', so a new semester only needs new dates.",
+  "course": {
+    "number": "2300",
+    "title": "TEXT",
+    "term": "Spring 2027",
+    "meets": "Mondays",
+    "instructor": "Rick Griffith",
+    "email": "Rick.Griffith@colorado.edu",
+    "las": [
+      "Kira Warren",
+      "Zoe Cooper",
+      "Autumn Davis",
+      "Diya Mehta"
+    ]
+  },
+  "calendar": {
+    "source": "CU Boulder Office of the Registrar, Spring 2027 Main Campus Academic Calendar",
+    "url": "https://www.colorado.edu/registrar/media/1943",
+    "notes": [
+      "Classes begin Thursday, January 7, 2027.",
+      "Monday, January 18: Martin Luther King Jr. Holiday, no classes.",
+      "Monday, March 15 to Friday, March 19: spring break, no classes.",
+      "Friday, April 23: last day of classes; campus follows the Monday class schedule that day. The syllabus schedules thirteen sessions, so this day is not assigned.",
+      "April 26 to 30: final exam period. This course has no final."
+    ],
+    "pairing": "Lectures are paired with dates in order, as listed. The original does not tie each lecture to a date."
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "date": "2027-01-11"
+    },
+    {
+      "n": 2,
+      "date": "2027-01-25"
+    },
+    {
+      "n": 3,
+      "date": "2027-02-01"
+    },
+    {
+      "n": 4,
+      "date": "2027-02-08"
+    },
+    {
+      "n": 5,
+      "date": "2027-02-15"
+    },
+    {
+      "n": 6,
+      "date": "2027-02-22"
+    },
+    {
+      "n": 7,
+      "date": "2027-03-01"
+    },
+    {
+      "n": 8,
+      "date": "2027-03-08"
+    },
+    {
+      "n": 9,
+      "date": "2027-03-22"
+    },
+    {
+      "n": 10,
+      "date": "2027-03-29"
+    },
+    {
+      "n": 11,
+      "date": "2027-04-05"
+    },
+    {
+      "n": 12,
+      "date": "2027-04-12"
+    },
+    {
+      "n": 13,
+      "date": "2027-04-19"
+    }
+  ],
+  "due": {
+    "MA1": 3,
+    "MA2": 6,
+    "MA3": 12
+  },
+  "fall": {
+    "sessions": [
+      "8/24",
+      "8/31",
+      "9/14",
+      "9/21",
+      "9/28",
+      "10/5",
+      "10/12",
+      "10/19",
+      "10/26",
+      "11/2",
+      "11/9",
+      "11/16",
+      "11/30"
+    ]
+  },
+  "ladder": [
+    "Ask the syllabus.",
+    "Ask your LA at recitation.",
+    "Then email Rick."
+  ],
+  "starters": [
+    "What is due next?",
+    "How many classes can I miss?"
+  ],
+  "passages": [
+    {
+      "id": "course",
+      "section": "The course",
+      "title": "What this course is",
+      "text": [
+        "2300 TEXT",
+        "Typography for both print and digital media, explored with historic context and practical applications. For creative technologists, and ‘would be’ professional designers.",
+        "RICK GRIFFITH",
+        "Rick.Griffith@colorado.edu",
+        "WITH LEARNING ASSISTANTS",
+        "Kira Warren",
+        "Zoe Cooper",
+        "Autumn Davis",
+        "Diya Mehta"
+      ],
+      "means": "This is a typography course for people who make things with technology. Rick Griffith teaches the lectures and four Learning Assistants (LAs) are named with him. His email is printed here.",
+      "next": "none",
+      "keywords": [
+        "who",
+        "teacher",
+        "professor",
+        "instructor",
+        "email",
+        "contact",
+        "la",
+        "las",
+        "learning",
+        "assistants",
+        "names",
+        "what",
+        "is",
+        "this",
+        "course",
+        "about",
+        "typography",
+        "description",
+        "griffith",
+        "las",
+        "who",
+        "griffith",
+        "email",
+        "emailing"
+      ]
+    },
+    {
+      "id": "lectures",
+      "section": "Lectures of the course",
+      "title": "The thirteen lectures",
+      "text": [
+        "LECTURES OF THE COURSE",
+        "1. TEXT - An introduction to how I see it and who I am. And what I’m currently doing.",
+        "2. THE LABEL - Trust and the way words might participate in meaning.",
+        "3. TYPOGRAPHY PT. 1- Some histories and some language. PART ONE",
+        "4. TYPOGRAPHY - The deeper understanding and vocabulary. PART TWO",
+        "5. DESIGN PRINCIPLES - Movements in Design and Art History",
+        "6. DESIGN PRINCIPLES - 2 Dimensions Print - Part One - GRIDS etc.",
+        "7. SEMIOTICS - Representations",
+        "8. SEMIOTICS - Signs and Signifiers",
+        "9. BRANDS -",
+        "10. PROFESSIONAL WORK -",
+        "11. CRITIQUE -",
+        "12. DEPTH -",
+        "13. RESOURCES -",
+        "NO FINAL -"
+      ],
+      "means": "There are thirteen lectures and no final exam. The first eight have descriptions. Lectures 9 through 13 are named but not described.",
+      "next": "la",
+      "keywords": [
+        "lecture",
+        "lectures",
+        "topics",
+        "list",
+        "semiotics",
+        "brands",
+        "grids",
+        "label",
+        "critique",
+        "depth",
+        "resources",
+        "final",
+        "exam",
+        "no",
+        "final",
+        "what",
+        "will",
+        "we",
+        "learn"
+      ]
+    },
+    {
+      "id": "schedule",
+      "section": "Lectures of the course",
+      "title": "The dates",
+      "text": [
+        "{{S1}}",
+        "{{S2}}",
+        "{{S3}}",
+        "{{S4}}",
+        "{{S5}}",
+        "{{S6}}",
+        "{{S7}}",
+        "{{S8}}",
+        "{{S9}}",
+        "{{S10}}",
+        "{{S11}}",
+        "{{S12}}",
+        "{{S13}}",
+        "HAGL",
+        "{{MA1}} MA",
+        "{{MA2}} MA",
+        "{{MA3}} MA",
+        "RUN BY LAs"
+      ],
+      "means": "The course meets on thirteen Mondays in Spring 2027. There is no class on January 18 (Martin Luther King Jr. Day) or March 15 (spring break). MA marks the three dates when Major Assignments are due. RUN BY LAs sits beside the last date. The syllabus does not say what HAGL stands for; it sits where the schedule ends. The original sets the thirteen lectures beside the thirteen dates without tying each to each.",
+      "next": "la",
+      "keywords": [
+        "when",
+        "dates",
+        "schedule",
+        "calendar",
+        "monday",
+        "mondays",
+        "week",
+        "class",
+        "meet",
+        "meets",
+        "spring",
+        "break",
+        "mlk",
+        "holiday",
+        "hagl",
+        "last",
+        "day",
+        "first",
+        "day",
+        "semester",
+        "start",
+        "end"
+      ]
+    },
+    {
+      "id": "attendance-expectation",
+      "section": "Attendance",
+      "title": "Showing up",
+      "text": [
+        "Attendance:",
+        "Much like other purchases—you will find yourself responsible for the quality of your experience. My responsibility is to many students—I expect that if you want to know what this whole typography thing is about, you’re going to show up on time—all the time. If you think this might not be the right time for this class consider doing this another time."
+      ],
+      "means": "You are expected at every class, on time. Rick is saying the course gives back what you put in, and that if this semester is too crowded for you, taking it later is a fair choice.",
+      "next": "la",
+      "keywords": [
+        "attendance",
+        "show",
+        "up",
+        "on",
+        "time",
+        "late",
+        "tardy",
+        "expectation",
+        "responsible",
+        "purchase",
+        "drop",
+        "withdraw",
+        "right",
+        "time",
+        "tardy",
+        "punctual",
+        "minutes"
+      ]
+    },
+    {
+      "id": "attendance-limits",
+      "section": "Attendance",
+      "title": "How many absences you get",
+      "text": [
+        "If you are found absent more than twice you will be ineligible for an A grade. More than 3 times you would be ineligible for a C."
+      ],
+      "means": "You can miss two classes and still earn an A. A third absence takes the A off the table. A fourth means you cannot earn a C. The syllabus does not say what happens for excused absences or emergencies, so tell your LA as early as you can. Two extra credit assignments can stand in for one absence (see Grading).",
+      "next": "la",
+      "keywords": [
+        "absent",
+        "absence",
+        "absences",
+        "miss",
+        "missed",
+        "missing",
+        "skip",
+        "skipped",
+        "sick",
+        "excused",
+        "how",
+        "many",
+        "classes",
+        "can",
+        "i",
+        "miss",
+        "ineligible",
+        "ineligible"
+      ]
+    },
+    {
+      "id": "recitation-synopsis",
+      "section": "At recitations",
+      "title": "What the LA does",
+      "text": [
+        "At Recitations:",
+        "The LA will be responsible for delivering a synopsis of the course. You will receive a handout."
+      ],
+      "means": "Recitation is the session run by your Learning Assistant. The LA gives a synopsis of the course and you receive a handout.",
+      "next": "la",
+      "keywords": [
+        "recitation",
+        "recitations",
+        "la",
+        "learning",
+        "assistant",
+        "synopsis",
+        "handout",
+        "what",
+        "happens",
+        "section",
+        "lab"
+      ]
+    },
+    {
+      "id": "recitation-assignment",
+      "section": "At recitations",
+      "title": "The recitation assignment",
+      "text": [
+        "You will pick up an assignment that you can perform during that period. Sign and place the assignment in the folder on your way out of the room.",
+        "Each recitation assignment is also an attendance mechanism."
+      ],
+      "means": "Every recitation has an assignment you can do during that session. Sign it and put it in the folder as you leave. The syllabus says the assignment is also how attendance is taken.",
+      "next": "la",
+      "keywords": [
+        "recitation",
+        "assignment",
+        "minor",
+        "sign",
+        "folder",
+        "attendance",
+        "mechanism",
+        "turn",
+        "in",
+        "hand",
+        "in",
+        "pick",
+        "up"
+      ]
+    },
+    {
+      "id": "recitation-reading",
+      "section": "At recitations",
+      "title": "Reading and discussion days",
+      "text": [
+        "If the recitation has a reading and discussion assignment. This Happens during the session and the text is read out loud with everyone present.",
+        "Each person reads one or two paragraphs.",
+        "Each person writes a 2 sentence synopsis.",
+        "by hand."
+      ],
+      "means": "On reading days the group reads the text out loud together during the session. You read a paragraph or two, then write a two-sentence summary by hand.",
+      "next": "la",
+      "keywords": [
+        "reading",
+        "read",
+        "aloud",
+        "out",
+        "loud",
+        "discussion",
+        "paragraph",
+        "synopsis",
+        "summary",
+        "by",
+        "hand",
+        "handwritten",
+        "homework",
+        "before",
+        "class"
+      ]
+    },
+    {
+      "id": "recitation-practice",
+      "section": "At recitations",
+      "title": "Practice",
+      "text": [
+        "Each recitation has a practice which you can participate with as long as you please."
+      ],
+      "means": "Each recitation also has a hands-on exercise. You can keep working on it for as long as you like.",
+      "next": "la",
+      "keywords": [
+        "practice",
+        "exercise",
+        "participate",
+        "how",
+        "long",
+        "stay",
+        "recitation"
+      ]
+    },
+    {
+      "id": "recitation-quiz",
+      "section": "At recitations",
+      "title": "Quizzes",
+      "text": [
+        "If it is a quiz the quiz can rerefer to any source. All quizzes are to be handed in before you leave."
+      ],
+      "means": "Quizzes are handed in before you leave. The wording about sources is unclear: it may mean you can look things up, or that a quiz can draw on any material. Ask your LA before a quiz which it is.",
+      "next": "la",
+      "keywords": [
+        "quiz",
+        "quizzes",
+        "test",
+        "open",
+        "book",
+        "notes",
+        "source",
+        "look",
+        "up",
+        "phone",
+        "laptop"
+      ]
+    },
+    {
+      "id": "recitation-handin",
+      "section": "At recitations",
+      "title": "Hand it in before you go",
+      "text": [
+        "The work you make must be handed in before you leave the room."
+      ],
+      "means": "Whatever you make in recitation is turned in during that same session. Nothing goes home.",
+      "next": "la",
+      "keywords": [
+        "hand",
+        "in",
+        "turn",
+        "in",
+        "before",
+        "leave",
+        "room",
+        "recitation",
+        "work"
+      ]
+    },
+    {
+      "id": "recitation-late",
+      "section": "At recitations",
+      "title": "No late work, and 10 of 15 count",
+      "text": [
+        "There are no late assignments for the recitations don’t ask for extensions due to absence.",
+        "10 Assignments will be accepted of a possible 15 assignments during the semester."
+      ],
+      "means": "Recitation assignments cannot be turned in late, and missing the session is not a reason for an extension. There are 15 across the semester and 10 are counted. The syllabus does not say whether a missed recitation also counts as an absence, so do not treat the extra five as free; ask your LA.",
+      "next": "la",
+      "keywords": [
+        "late",
+        "extension",
+        "extensions",
+        "make",
+        "up",
+        "makeup",
+        "missed",
+        "recitation",
+        "10",
+        "of",
+        "15",
+        "ten",
+        "fifteen",
+        "how",
+        "many",
+        "minor",
+        "assignments",
+        "count",
+        "recitations",
+        "skip",
+        "skipped",
+        "count",
+        "counted"
+      ]
+    },
+    {
+      "id": "overview-ma1",
+      "section": "Assignment overview page",
+      "title": "MA One, as printed on the overview",
+      "text": [
+        "MAJOR ASSIGNMENTS OF THE COURSE",
+        "MA ONE DUE {{MA1}} MA TWO DUE {{MA2}} MA THREE DUE {{MA3}}",
+        "Hand Drawn Letters",
+        "Draw with some accuracy and fidelity the following letters, (ALL LETTERS) each in the sizes stated below (ALL SIZES), in three of the typefaces stated below. (CHOOSE 3.)",
+        "Provide a 2 sentence biography of the designers of any typefaces you choose.",
+        "MAJISCULE: CAPITAL: UPPERCASE:",
+        "B Q K Y",
+        "MINUSCULE: COMMON: LOWERCASE:",
+        "a g p y + any other vowel",
+        "NUMBER: NUMERAL:DIGIT:",
+        "any Number you choose",
+        "SIZES IN PTS. and PICAS",
+        "36 72 222 450 PTS / 25 PICAS",
+        "TYPEFACES",
+        "Bodoni Extra Bold Italic",
+        "Trade Gothic Condensed 20 (BOLD)",
+        "Baskerville Italic",
+        "Garamond Roman",
+        "Interstate Gothic",
+        "Futura Extra Bold",
+        "This assignment is to be performed during the recitation, and also where ever the student is most comfortable. During the recitation the LA will help guide research for the student group and general solutions for tools and expectations.",
+        "There are 150 Drawings which can be made into any artifact the student would like, a book, a poster, a stack of uncoordinated papers. Whatever."
+      ],
+      "means": "The syllabus prints each Major Assignment twice: once on a one-page overview and once on its own page. This is the overview version of MA One. It differs in one place: the lowercase list here is a g p y plus any other vowel. That fifth lowercase letter is what makes 10 characters and 150 drawings. Ask your LA which list to follow.",
+      "next": "la",
+      "keywords": [
+        "overview",
+        "any",
+        "other",
+        "vowel",
+        "vowel",
+        "fifth",
+        "letter",
+        "150",
+        "difference",
+        "two",
+        "versions",
+        "ma1"
+      ]
+    },
+    {
+      "id": "overview-ma2",
+      "section": "Assignment overview page",
+      "title": "MA Two, as printed on the overview",
+      "text": [
+        "NUMBERS and Statistics",
+        "Pull 1 Statistic from each of the following:",
+        "Fin Tech - Financial Times",
+        "(Online or Newspaper. Provide citation)",
+        "Op Ed. - New York Times",
+        "(Online or Newspaper. Provide citation)",
+        "Sports - ESPN",
+        "(TV, Provide photo citation)",
+        "Produce (3) 4 Slide Decks to sell any aspect of the research. Recreate a branded template for the author of each deck. Each deck is from a different author position. Pro/Con/Neutral.",
+        "This is an assignment at the intersection of speculative futures and storytelling using—more or less—accepted forms of source material and retold and cited for the purposes of promoting a favorable/unfavorable circumstance and the consequences that are in the truth of this ‘fact’. Numbers are central to this work. There must be a number story.",
+        "Use AI at your own risk. AI errors are common, if the AI errors are present in your finished work. Your final grade for the assignment will drop by a full letter grade.",
+        "EXAMPLE:",
+        "A 4 Slide deck produced from a piece of information found in an ESPN report about the inbound trend of ‘Leisurewear’. The statistic might support investment in a ‘breathable textile startup’. The author might be a tech/textile company selling the investment opportunity. Located in Jaipur, Northern India. With more than one technical fabric in its portfolio."
+      ],
+      "means": "This is the overview version of MA Two. The only difference from the full page is one word in the example: Leisurewear here, AthleisureWear there. The assignment is the same.",
+      "next": "la",
+      "keywords": [
+        "overview",
+        "leisurewear",
+        "athleisure",
+        "difference",
+        "two",
+        "versions",
+        "ma2"
+      ]
+    },
+    {
+      "id": "overview-ma3",
+      "section": "Assignment overview page",
+      "title": "MA Three, as printed on the overview",
+      "text": [
+        "This Syllabus",
+        "Remake this Syllabus:",
+        "Attempt to communicate with clarity, with empathy for the student new to this type of inquiry, with sensitivity to how authority is passed from the document to the student and then to the LA with clear expectations of when and how and when to contact the instructor.",
+        "This is final assignment is due towards the end of the semester. One or two lucky students will get a live critique with the class. On our last full day together {{MA3}}.",
+        "DETAILS:",
+        "The final text for this is in this PDF you can extract the text or ask one of the LAs for a text file that will give you unformatted copy.",
+        "Don’t omit anything in the syllabus or the MA or the schedule.",
+        "Use the published academic calendar for the university. For the next semester."
+      ],
+      "means": "This is the overview version of MA Three. It ends differently from the full page: here the syllabus should make clear when and how to contact the instructor, and on the full page it should make clear when and how to perform for the grade. A strong remake answers both.",
+      "next": "rick",
+      "keywords": [
+        "overview",
+        "contact",
+        "the",
+        "instructor",
+        "when",
+        "to",
+        "contact",
+        "rick",
+        "email",
+        "professor",
+        "difference",
+        "two",
+        "versions",
+        "ma3",
+        "authority"
+      ]
+    },
+    {
+      "id": "ma1-task",
+      "section": "Major Assignment 1",
+      "title": "MA One: Hand Drawn Letters",
+      "text": [
+        "2300 1",
+        "MAJOR ASSIGNMENT OF THE COURSE",
+        "MA ONE DUE {{MA1}}",
+        "Hand Drawn Letters",
+        "Draw with some accuracy and fidelity the following letters, (ALL LETTERS) each in the sizes stated below (ALL SIZES), in three of the typefaces stated below. (CHOOSE 3.)",
+        "Provide a 2 sentence biography of the designers of any typefaces you choose."
+      ],
+      "means": "MA means Major Assignment. For the first one you draw letters by hand, carefully copying real typefaces. Pick three typefaces from the list, draw every listed letter in every listed size, and write two sentences about the designer of each typeface you picked.",
+      "next": "la",
+      "keywords": [
+        "ma1",
+        "ma",
+        "one",
+        "first",
+        "major",
+        "assignment",
+        "hand",
+        "drawn",
+        "letters",
+        "draw",
+        "drawing",
+        "due",
+        "biography",
+        "designers",
+        "what",
+        "is",
+        "ma"
+      ]
+    },
+    {
+      "id": "ma1-letters",
+      "section": "Major Assignment 1",
+      "title": "Which letters and sizes",
+      "text": [
+        "MAJISCULE: CAPITAL: UPPERCASE:",
+        "B Q K Y",
+        "MINUSCULE: COMMON: LOWERCASE:",
+        "a g p y",
+        "NUMBER: NUMERAL: DIGIT:",
+        "any Numeral you choose",
+        "SIZES IN PTS. and PICAS",
+        "36 72 222 450 PTS / 25 PICAS"
+      ],
+      "means": "Draw four capitals (B Q K Y), four lowercase letters (a g p y) and one numeral of your choice, in the sizes listed: 36, 72, 222 and 450 points, and 25 picas. A point is 1/72 of an inch and a pica is 12 points, so 450 points is 6.25 inches and 25 picas is about 4.2 inches. The overview page adds one more vowel to the lowercase list.",
+      "next": "la",
+      "keywords": [
+        "letters",
+        "which",
+        "letters",
+        "sizes",
+        "points",
+        "picas",
+        "pts",
+        "36",
+        "72",
+        "222",
+        "450",
+        "25",
+        "uppercase",
+        "lowercase",
+        "majuscule",
+        "minuscule",
+        "numeral",
+        "number",
+        "how",
+        "big",
+        "inches"
+      ]
+    },
+    {
+      "id": "ma1-typefaces",
+      "section": "Major Assignment 1",
+      "title": "The typefaces",
+      "text": [
+        "TYPEFACES",
+        "Bodoni Extra Bold Italic",
+        "Trade Gothic Condensed 20 (BOLD)",
+        "Baskerville Italic",
+        "Garamond Roman",
+        "Interstate Gothic",
+        "Futura Extra Bold"
+      ],
+      "means": "Choose any three of these six typefaces. Note the exact weight and style named for each one; Bodoni Extra Bold Italic is not the same drawing as plain Bodoni.",
+      "next": "la",
+      "keywords": [
+        "typefaces",
+        "typeface",
+        "fonts",
+        "font",
+        "bodoni",
+        "trade",
+        "gothic",
+        "baskerville",
+        "garamond",
+        "interstate",
+        "futura",
+        "choose",
+        "three",
+        "which"
+      ]
+    },
+    {
+      "id": "ma1-where",
+      "section": "Major Assignment 1",
+      "title": "Where you do it",
+      "text": [
+        "This assignment is to be performed during the recitation, and also where ever the student is most comfortable. During the recitation the LA will help guide research for the student group and general solutions for tools and expectations."
+      ],
+      "means": "You work on this in recitation and anywhere else you like. In recitation your LA helps the group research the typefaces and figure out tools and what is expected.",
+      "next": "la",
+      "keywords": [
+        "where",
+        "work",
+        "on",
+        "ma1",
+        "recitation",
+        "home",
+        "la",
+        "help",
+        "tools",
+        "research",
+        "expectations"
+      ]
+    },
+    {
+      "id": "ma1-artifact",
+      "section": "Major Assignment 1",
+      "title": "150 drawings, and what earns an A",
+      "text": [
+        "There are 150 Drawings which can be made into any artifact the student would like, a book, a poster, a stack of uncoordinated papers. Whatever.",
+        "The B grade is getting it done. The A grade makes it interesting."
+      ],
+      "means": "The syllabus says there are 150 drawings and does not show the arithmetic. One way the count reaches 150: 10 characters (the nine listed plus the extra vowel on the overview page), 5 sizes (four in points, one in picas), 3 typefaces. Ask your LA to confirm. How you present them is up to you. Finishing earns a B. An A comes from making it interesting.",
+      "next": "la",
+      "keywords": [
+        "150",
+        "drawings",
+        "how",
+        "many",
+        "artifact",
+        "book",
+        "poster",
+        "stack",
+        "present",
+        "format",
+        "b",
+        "grade",
+        "a",
+        "grade",
+        "interesting",
+        "getting",
+        "it",
+        "done",
+        "rubric"
+      ]
+    },
+    {
+      "id": "ma1-rules",
+      "section": "Major Assignment 1",
+      "title": "One tool, one color",
+      "text": [
+        "Use any tool you wish",
+        "and only that tool.",
+        "1 color only excluding",
+        "paper colors."
+      ],
+      "means": "Pick one drawing tool and use only that tool for the whole assignment. Use one ink color. The color of the paper does not count as a color.",
+      "next": "la",
+      "keywords": [
+        "tool",
+        "tools",
+        "pen",
+        "pencil",
+        "marker",
+        "brush",
+        "ipad",
+        "digital",
+        "color",
+        "colour",
+        "one",
+        "color",
+        "paper",
+        "rules",
+        "ma1",
+        "drawings",
+        "drawing",
+        "procreate",
+        "tablet",
+        "pencil"
+      ]
+    },
+    {
+      "id": "ma2-task",
+      "section": "Major Assignment 2",
+      "title": "MA Two: Numbers and Statistics",
+      "text": [
+        "2300 2",
+        "MAJOR ASSIGNMENT OF THE COURSE",
+        "MA TWO DUE {{MA2}}",
+        "NUMBERS and Statistics",
+        "Pull 1 Statistic from each of the following:",
+        "Fin Tech - Financial Times",
+        "(Online or Newspaper. Provide citation)",
+        "Op Ed. - New York Times",
+        "(Online or Newspaper. Provide citation)",
+        "Sports - ESPN",
+        "(TV, Provide photo citation)"
+      ],
+      "means": "Find three statistics: one from a fintech story in the Financial Times, one from a New York Times opinion piece, and one from sports coverage on ESPN television. Cite each. For ESPN the citation is a photo of the broadcast.",
+      "next": "la",
+      "keywords": [
+        "ma2",
+        "ma",
+        "two",
+        "second",
+        "major",
+        "assignment",
+        "numbers",
+        "statistics",
+        "statistic",
+        "financial",
+        "times",
+        "new",
+        "york",
+        "times",
+        "espn",
+        "citation",
+        "cite",
+        "photo",
+        "due"
+      ]
+    },
+    {
+      "id": "ma2-decks",
+      "section": "Major Assignment 2",
+      "title": "Three decks, three positions",
+      "text": [
+        "Produce (3) 4 Slide Decks to sell any aspect of the research. Recreate a branded template for the author of each deck. Each deck is from a different author position.",
+        "Pro/Con/Neutral."
+      ],
+      "means": "Make three slide decks of four slides each. Each deck argues from a different author's position: one in favor, one against, one neutral. Each deck gets a branded template made for its author.",
+      "next": "la",
+      "keywords": [
+        "decks",
+        "deck",
+        "slides",
+        "slide",
+        "four",
+        "4",
+        "three",
+        "3",
+        "pro",
+        "con",
+        "neutral",
+        "author",
+        "branded",
+        "template",
+        "brand",
+        "position"
+      ]
+    },
+    {
+      "id": "ma2-purpose",
+      "section": "Major Assignment 2",
+      "title": "What the assignment is about",
+      "text": [
+        "This is an assignment at the intersection of speculative futures and storytelling using—more or less—accepted forms of source material and retold and cited for the purposes of promoting a favorable/unfavorable circumstance and the consequences that are in the truth of this ‘fact’. Numbers are central to this work. There must be a number story."
+      ],
+      "means": "You retell real, cited source material to argue for a good or bad outcome and what follows from it. Numbers have to be central, and each deck has to tell a story with a number.",
+      "next": "la",
+      "keywords": [
+        "speculative",
+        "futures",
+        "storytelling",
+        "number",
+        "story",
+        "purpose",
+        "why",
+        "point",
+        "of",
+        "ma2",
+        "fact",
+        "consequences"
+      ]
+    },
+    {
+      "id": "ma2-ai",
+      "section": "Major Assignment 2",
+      "title": "Using AI",
+      "text": [
+        "Use AI at your own risk. AI errors are common, if the AI errors are present in your finished work. Your final grade for the assignment will drop by a full letter grade."
+      ],
+      "means": "This rule is printed in MA Two. The syllabus does not say anything about AI for other work. For MA Two, using AI is at your own risk: if an AI error shows up in what you hand in, the assignment loses a full letter grade.",
+      "next": "la",
+      "keywords": [
+        "ai",
+        "chatgpt",
+        "claude",
+        "artificial",
+        "intelligence",
+        "allowed",
+        "use",
+        "ai",
+        "errors",
+        "letter",
+        "grade",
+        "drop",
+        "penalty",
+        "risk"
+      ]
+    },
+    {
+      "id": "ma2-example",
+      "section": "Major Assignment 2",
+      "title": "The example",
+      "text": [
+        "EXAMPLE:",
+        "A 4 Slide deck produced from a piece of information found in an ESPN report about the inbound trend of ‘AthleisureWear’. The statistic might support investment in a ‘breathable textile startup’. The author might be a tech/textile company selling the investment opportunity. Located in Jaipur, Northern India. With more than one technical fabric in its portfolio."
+      ],
+      "means": "An example of one deck: an ESPN statistic about athleisure clothing, used to pitch investment in a fabric startup. The example's author is specific, with a location and a product line.",
+      "next": "la",
+      "keywords": [
+        "example",
+        "athleisure",
+        "leisurewear",
+        "textile",
+        "startup",
+        "jaipur",
+        "india",
+        "espn",
+        "deck",
+        "sample"
+      ]
+    },
+    {
+      "id": "ma2-rules",
+      "section": "Major Assignment 2",
+      "title": "What to hand in",
+      "text": [
+        "When complete there",
+        "will be 3 separate decks.",
+        "All narratives are factual.",
+        "There must be evidence",
+        "to support any inference.",
+        "Upload the work to",
+        "canvas."
+      ],
+      "means": "You hand in three separate decks, uploaded to Canvas. Everything in them must be factual, and every conclusion you draw needs evidence behind it.",
+      "next": "la",
+      "keywords": [
+        "upload",
+        "canvas",
+        "submit",
+        "hand",
+        "in",
+        "three",
+        "separate",
+        "decks",
+        "factual",
+        "evidence",
+        "inference",
+        "ma2",
+        "where",
+        "turn",
+        "in",
+        "upload",
+        "decks",
+        "canvas"
+      ]
+    },
+    {
+      "id": "ma3-task",
+      "section": "Major Assignment 3",
+      "title": "MA Three: This Syllabus",
+      "text": [
+        "2300 3",
+        "MAJOR ASSIGNMENT OF THE COURSE",
+        "MA THREE DUE {{MA3}}",
+        "This Syllabus",
+        "Remake this Syllabus:",
+        "With everything you have experienced thus far.",
+        "Remake this document for the next lucky students, who would take the course."
+      ],
+      "means": "The last Major Assignment is to redesign this syllabus for the students who take the course after you, using what the semester taught you.",
+      "next": "la",
+      "keywords": [
+        "ma3",
+        "ma",
+        "three",
+        "third",
+        "final",
+        "major",
+        "assignment",
+        "remake",
+        "syllabus",
+        "redesign",
+        "next",
+        "students",
+        "due"
+      ]
+    },
+    {
+      "id": "ma3-how",
+      "section": "Major Assignment 3",
+      "title": "What it has to do",
+      "text": [
+        "Communicate with clarity, with empathy for the student new to this type of inquiry, with sensitivity to how the authority in this document passes to the student and then to the LA with clear expectations of when and how to perform for the grade."
+      ],
+      "means": "Your version must be clear, kind to someone who has never taken a course like this, and exact about what earns the grade and when. It should also show that you thought about who is in charge at each step: the document, the student, the LA.",
+      "next": "la",
+      "keywords": [
+        "clarity",
+        "empathy",
+        "authority",
+        "passes",
+        "la",
+        "expectations",
+        "perform",
+        "grade",
+        "criteria",
+        "what",
+        "makes",
+        "good",
+        "ma3"
+      ]
+    },
+    {
+      "id": "ma3-when",
+      "section": "Major Assignment 3",
+      "title": "Timing and the live critique",
+      "text": [
+        "This is final assignment is due towards the end of the semester.",
+        "One or two lucky students will get a live critique with the class.",
+        "On our last full day together {{MA3}}."
+      ],
+      "means": "This is the final assignment. On the due date, which is the last full class, one or two students have their work critiqued live in front of everyone.",
+      "next": "la",
+      "keywords": [
+        "live",
+        "critique",
+        "crit",
+        "class",
+        "last",
+        "day",
+        "final",
+        "assignment",
+        "when",
+        "presented",
+        "present"
+      ]
+    },
+    {
+      "id": "ma3-details",
+      "section": "Major Assignment 3",
+      "title": "The text and the calendar",
+      "text": [
+        "DETAILS:",
+        "The final text for this is in this PDF",
+        "you can extract the text or ask one of the LAs for a text file that will give you unformatted copy.",
+        "Don’t omit anything in the syllabus or the MA or the schedule.",
+        "Use the published academic calendar for the university. For the next semester."
+      ],
+      "means": "Use the words of this syllabus as your text. Copy them from the PDF, or ask an LA for a plain text file. Leave nothing out. Change the dates to the university's published calendar for the following semester.",
+      "next": "la",
+      "keywords": [
+        "text",
+        "file",
+        "pdf",
+        "extract",
+        "unformatted",
+        "copy",
+        "omit",
+        "anything",
+        "academic",
+        "calendar",
+        "next",
+        "semester",
+        "dates",
+        "details",
+        "la"
+      ]
+    },
+    {
+      "id": "ma3-rules",
+      "section": "Major Assignment 3",
+      "title": "Format rules",
+      "text": [
+        "Make a website or a PDF",
+        "as the final output.",
+        "Print the PDF.",
+        "DO NOT Print Web",
+        "pages.",
+        "The document has to be",
+        "editable.",
+        "Use as many pages as",
+        "you wish.",
+        "You may use a",
+        "controversial or",
+        "experimental approach",
+        "as long as the output",
+        "conforms all the",
+        "conditions."
+      ],
+      "means": "Hand in either a website or a PDF. If it is a PDF, print it. Do not print a website. The file must be something another person can edit. Length is up to you. Bold or strange ideas are welcome as long as every rule here is still met.",
+      "next": "la",
+      "keywords": [
+        "website",
+        "pdf",
+        "print",
+        "editable",
+        "pages",
+        "length",
+        "experimental",
+        "controversial",
+        "format",
+        "output",
+        "rules",
+        "ma3"
+      ]
+    },
+    {
+      "id": "grading-major",
+      "section": "Grading of the course",
+      "title": "Major Assignments: 30%",
+      "text": [
+        "GRADING OF THE COURSE",
+        "Major Assignments",
+        "30%",
+        "All 3 Late Penalty 10%"
+      ],
+      "means": "The three Major Assignments together are 30% of your grade. All three carry a 10% late penalty. The syllabus does not say whether that is 10% once or 10% per day, so ask your LA before you turn one in late.",
+      "next": "la",
+      "keywords": [
+        "grading",
+        "grade",
+        "major",
+        "assignments",
+        "30",
+        "percent",
+        "late",
+        "penalty",
+        "10",
+        "weight",
+        "worth",
+        "how",
+        "much",
+        "split",
+        "breakdown",
+        "weights",
+        "percentages"
+      ]
+    },
+    {
+      "id": "grading-minor",
+      "section": "Grading of the course",
+      "title": "Minor Assignments: 50%",
+      "text": [
+        "Minor Assignments",
+        "50%",
+        "No Late Assignments",
+        "10 of 15 Available"
+      ],
+      "means": "The recitation assignments appear to be the Minor Assignments: both are counted as 10 of 15 with nothing accepted late. They are half your grade.",
+      "next": "la",
+      "keywords": [
+        "minor",
+        "assignments",
+        "50",
+        "percent",
+        "half",
+        "no",
+        "late",
+        "10",
+        "of",
+        "15",
+        "recitation",
+        "grade",
+        "weight"
+      ]
+    },
+    {
+      "id": "grading-attendance",
+      "section": "Grading of the course",
+      "title": "Attendance, participation, extra credit: 20%",
+      "text": [
+        "20%",
+        "Attendance",
+        "Participation",
+        "Extra Credit"
+      ],
+      "means": "The last 20% covers attendance, participation and extra credit. The syllabus does not say how the 20% is split among the three.",
+      "next": "la",
+      "keywords": [
+        "attendance",
+        "participation",
+        "extra",
+        "credit",
+        "20",
+        "percent",
+        "grade",
+        "weight"
+      ]
+    },
+    {
+      "id": "grading-extra",
+      "section": "Grading of the course",
+      "title": "What extra credit can replace",
+      "text": [
+        "Any 2 Extra Credit assignments can substitute for a minor assignment or a single absentee"
+      ],
+      "means": "Two extra credit assignments can be traded for one Minor Assignment or for one absence. The syllabus does not list the extra credit assignments; ask your LA.",
+      "next": "la",
+      "keywords": [
+        "extra",
+        "credit",
+        "substitute",
+        "replace",
+        "make",
+        "up",
+        "absence",
+        "absentee",
+        "minor",
+        "assignment",
+        "two",
+        "2"
+      ]
+    },
+    {
+      "id": "grading-total",
+      "section": "Grading of the course",
+      "title": "The total",
+      "text": [
+        "100%"
+      ],
+      "means": "Major Assignments 30%, Minor Assignments 50%, and attendance, participation and extra credit 20% add up to 100%.",
+      "next": "none",
+      "keywords": [
+        "total",
+        "100",
+        "percent",
+        "add",
+        "up",
+        "breakdown"
+      ]
+    },
+    {
+      "id": "assist-1",
+      "section": "The Assist",
+      "title": "The Assist: the letters in each typeface",
+      "text": [
+        "MAJOR ASSIGNMENT OF THE COURSE",
+        "THE ASSIST",
+        "2300 1",
+        "Bodoni Extra Bold Italic",
+        "Trade Gothic Condensed 20 (BOLD)",
+        "Baskerville Italic",
+        "Garamond Roman",
+        "Interstate Gothic",
+        "Futura Extra Bold",
+        "BQKY apgy",
+        "BQKY apgy",
+        "BQKY apgy",
+        "BQKY apgy",
+        "BQKY apgy",
+        "BQKY apgy"
+      ],
+      "means": "The Assist is a reference page for MA One. In the designed syllabus it shows the eight letters, B Q K Y and a g p y, once in each of the six typefaces. This site can only give you the names, not the letterforms; ask your LA for the Assist.",
+      "next": "la",
+      "keywords": [
+        "assist",
+        "reference",
+        "specimen",
+        "sheet",
+        "example",
+        "letters",
+        "typefaces",
+        "look",
+        "like",
+        "see",
+        "sample",
+        "bqky",
+        "apgy"
+      ]
+    },
+    {
+      "id": "assist-2",
+      "section": "The Assist",
+      "title": "The Assist 2",
+      "text": [
+        "MAJOR ASSIGNMENT OF THE COURSE",
+        "THE ASSIST 2",
+        "2300 1"
+      ],
+      "means": "The syllabus has a second Assist page for MA One that carries only its heading. Ask your LA what goes on it.",
+      "next": "la",
+      "keywords": [
+        "assist",
+        "2",
+        "second",
+        "assist",
+        "blank"
+      ]
+    }
+  ],
+  "intents": [
+    {
+      "match": "\\b(what time|start time|when does (the )?(class|lecture|recitation) (start|begin|end)|how long is (the )?(class|lecture|recitation)|what room|which room|classroom|where (is|does) (the )?(class|lecture|recitation|course)|what building|office hours?|textbook|book to buy|buy a book|drop (deadline|date)|withdraw|zoom|prerequisites?|how many credits)",
+      "dynamic": "none"
+    },
+    {
+      "match": "\\b(late to class|late for class|show up late|arrive late|running late|tardy|minutes late|min late)\\b",
+      "passages": [
+        "attendance-expectation"
+      ]
+    },
+    {
+      "match": "\\b(ma|major assignment)\\s*#?(one|1)\\b|\\bma1\\b|first major assignment",
+      "dynamic": "ma",
+      "key": "MA1"
+    },
+    {
+      "match": "\\b(ma|major assignment)\\s*#?(two|2)\\b|\\bma2\\b|second major assignment",
+      "dynamic": "ma",
+      "key": "MA2"
+    },
+    {
+      "match": "\\b(ma|major assignment)\\s*#?(three|3)\\b|\\bma3\\b|third major assignment|final assignment",
+      "dynamic": "ma",
+      "key": "MA3"
+    },
+    {
+      "match": "(due next|next due|what'?s due|what is due|due this week|coming up)",
+      "dynamic": "next-due"
+    },
+    {
+      "match": "(first|last) (day|class|session|lecture)|when does (the )?(semester|course) (start|begin|end)|how many (weeks|sessions|lectures)",
+      "dynamic": "span"
+    },
+    {
+      "match": "april 23|4/23|\\bfriday\\b",
+      "passages": [
+        "schedule"
+      ],
+      "means": "The syllabus schedules thirteen Mondays, and Friday, April 23 is not one of them, even though the university runs a Monday schedule that day. Ask your LA whether class meets."
+    },
+    {
+      "match": "(grade|grading|graded).*(split|broken|break|weigh|percent|calculat|made up)|how.*(graded|grading)",
+      "passages": [
+        "grading-major",
+        "grading-minor",
+        "grading-attendance"
+      ],
+      "means": "Your grade has three parts: Major Assignments 30%, Minor Assignments 50%, and attendance, participation and extra credit 20%."
+    },
+    {
+      "match": "\\b(get|earn|make|keep) an? a\\b|\\ban a\\b|a grade",
+      "passages": [
+        "attendance-limits",
+        "ma1-artifact"
+      ],
+      "means": "The syllabus mentions an A in two places: absences, and what makes MA One an A."
+    },
+    {
+      "match": "(turn|hand|submit|work|assignment|deck|drawing|project)\\w*.*\\blate\\b|\\blate\\b.*(work|assignment|penalty|turn|hand|submit)|\\bextensions?\\b|past due|miss(ed)? (a|the) deadline",
+      "passages": [
+        "grading-major",
+        "recitation-late"
+      ],
+      "means": "It depends on the kind of work. Major Assignments carry a 10% late penalty. Recitation assignments are not accepted late."
+    },
+    {
+      "match": "\\b(what('s| is| are)|meaning of|stand for).*\\bmas?\\b|\\bmas?\\b.*(mean|stand for)",
+      "passages": [
+        "ma1-task",
+        "grading-major"
+      ],
+      "means": "MA stands for Major Assignment. There are three across the semester and together they are 30% of your grade."
+    }
+  ],
+  "_intents_note": "'intents' are common questions answered with hand-picked passages. 'match' is a pattern tested against the question; 'passages' are ids from this file."
+}
